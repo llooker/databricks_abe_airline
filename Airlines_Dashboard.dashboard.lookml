@@ -5,7 +5,7 @@
   elements:
   - title: Most Popular Routes
     name: Most Popular Routes
-    model: airline-data
+    model: airline_data
     explore: airline_routes
     type: looker_bar
     fields: [airline_routes.origin_city, airline_routes.dest_city, airline_routes.count]
