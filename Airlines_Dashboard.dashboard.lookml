@@ -54,7 +54,7 @@
     height: 6
   - title: Flights Trend by Year
     name: Flights Trend by Year
-    model: airline-data
+    model: airline_data
     explore: airline_routes
     type: looker_line
     fields: [airline_routes.year, airline_routes.count]
@@ -70,7 +70,7 @@
     height: 6
   - title: Destinations with most delays
     name: Destinations with most delays
-    model: airline-data
+    model: airline_data
     explore: airline_routes
     type: looker_column
     fields: [airline_routes.dest_city, airline_routes.arrival_delay]
@@ -86,7 +86,7 @@
     height: 6
   - title: Airlines Market Share
     name: Airlines Market Share
-    model: airline-data
+    model: airline_data
     explore: airline_routes
     type: looker_pie
     fields: [airline_routes.airline, airline_routes.count]
@@ -107,7 +107,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: airline-data
+    model: airline_data
     explore: airline_routes
     listens_to_filters: []
     field: airline_routes.dest_city
@@ -117,7 +117,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: airline-data
+    model: airline_data
     explore: airline_routes
     listens_to_filters: []
     field: airline_routes.origin_city
@@ -127,7 +127,7 @@
     default_value: '2008'
     allow_multiple_values: true
     required: false
-    model: airline-data
+    model: airline_data
     explore: airline_routes
     listens_to_filters: []
     field: airline_routes.year

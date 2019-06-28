@@ -2,7 +2,7 @@ connection: "abe-demo-conn"
 
 # include all the views
 include: "*.view"
-
+include: "*.dashboard"
 datagroup: airline_data_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
